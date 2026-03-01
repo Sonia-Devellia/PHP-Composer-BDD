@@ -1,0 +1,13 @@
+{
+    "name": "kerx03/php_data_base",
+    "description": "Test PDO",
+    "type": "projet",
+    "autoload": {
+        "psr-4": {
+            "Kerx03\\PhpDataBase\\": "app/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
