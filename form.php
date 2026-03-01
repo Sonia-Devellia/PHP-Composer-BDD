@@ -14,10 +14,12 @@
         <h1 class="title">Base de données ABC - Ajout d'un produit</h1>
         <form method="POST" action="">
             <label>Description : <input type="text" name="designation" placeholder="Produit"
-                    value="<?= isset($_POST['designation']) ? $_POST['designation'] : '' ?>"></label><br>
+                    value="<?= isset($_POST['designation']) ? htmlspecialchars($_POST['designation']) : '' ?>">
+            </label>
 
             <label>Prix (en €) : <input type="number" step="0.01" name="tarif" placeholder="0.00"
-                    value="<?= isset($_POST['tarif']) ? $_POST['tarif'] : '' ?>"></label><br>
+                    value="<?= isset($_POST['tarif']) ? htmlspecialchars($_POST['tarif']) : '' ?>">
+            </label>
 
 
             <?php
