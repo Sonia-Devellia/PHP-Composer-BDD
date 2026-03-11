@@ -4,7 +4,9 @@
     "type": "projet",
     "autoload": {
         "psr-4": {
-            "Kerx03\\PhpDataBase\\": "app/"
+            "Kerx03\\PhpDataBase\\Controleur\\": "./Controleur",
+            "Kerx03\\PhpDataBase\\Cls\\": "./Cls",
+            "Kerx03\\PhpDataBase\\Modele\\": "./Modele"
         }
     },
     "require": {
